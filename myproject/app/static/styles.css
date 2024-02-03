@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color for the body */
+    color: #000; /* Set text color to black */
+}
+
+.container {
+    border: 3px solid sandybrown ;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e0e0e0; /* Light background color for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+header h1 {
+    background-color: #f0f0f0; /* Light background color for header */
+    color: #000; /* Set text color to black */
+    padding: 20px 0; /* Increase the padding for better visual appeal */
+    text-align: center; /* Center-align the content */
+    margin: 0;
+    font-size: 36px; /* Increase the font size for emphasis */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center-align the navigation links */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000; 
+    text-decoration: none;
+    font-size: 18px; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #ffcc00; 
+}
+
+main {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #f0f0f0; 
+    color: #000; 
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.quote-list{
+    color: rgb(230, 17, 31);
+    font-weight: 700;
+}
+span{
+    color: blue;
+    font-weight: bolder;
+}
+.quote-container{
+    border: 2px solid black;
+}

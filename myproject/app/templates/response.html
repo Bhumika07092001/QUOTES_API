@@ -1,0 +1,29 @@
+<!-- submitted_data.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Data</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles3.css' %}">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="/myapp/logout/">logout</a>
+        </div>
+    </nav>
+    <h2>Submitted Data</h2>
+    <p>Name: {{ name }}</p>
+    <p>Email: {{ email }}</p>
+    <div>
+        <h2>login to see all users</h2>
+        <a href="/myapp/login/">login</a>
+    </div>
+    
+
+
+</body>
+</html>

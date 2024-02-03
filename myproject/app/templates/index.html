@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Quotes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/myapp/login/">Login</a></li>
+                    <li><a href="/myapp/signup/">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Welcome to Quotes!</h2>
+            <div class="quote-container">
+            <ul>
+            {% for quote in quotes%}
+               <li class="quote-list">{{quote.quote}}--<span>{{quote.author}}</span></li>
+            {% endfor %}
+            </ul>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Contact Information: api_ninjas@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
